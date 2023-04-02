@@ -18,6 +18,6 @@ These components will check the source every MS milliseconds. If the content has
 
 ### component priority
 
-Every component without the priority attribute will be assigned a priority of 0. Components will get loaded after their assigned priority. This way you can load the GUI before more irrelevant background Scripts.
+Every component without the priority attribute will be assigned a priority of 0. Components will get loaded after their assigned priority. This way you can load the GUI before different background Scripts.
 
     <component src="URL" priority="X"></component>
