@@ -19,9 +19,3 @@ Include the script at the bottom of your HTML document.
 These components will check the source every MS milliseconds. If the content has changed, the component will be updated. If MS is not set, it will get a standard value of 2000.
 
     <component src="URL" class="refresh MS"></component>
-
-### component priority
-
-Every component without the priority attribute will be assigned a priority of 0. Components will get loaded after their assigned priority. This way you can load the GUI before different background Scripts.
-
-    <component src="URL" priority="X"></component>
