@@ -7,6 +7,10 @@ When building a website the HTML file can get heavily nested quite fast. I wante
 But as I didn't want to learn a complex JS framework with tons of features that would slow down my website, I decided to make my own lightweight and robust framework. In its current version, the minified version is not even half a kilobyte!
 
 ## Usage
+### Script Tag
+Include the script at the bottom of your HTML document.
+
+    <script src="https://cdn.remboldt.eu/jasna.min.js"></script>
 
 ### component
     <component src="URL"></component>
