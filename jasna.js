@@ -26,28 +26,11 @@ async function live_components(component) {
     }
 }
 
-let components = document.getElementsByTagName("component");
-let components_sorted = [];
+var components = document.getElementsByTagName("component");
 
-// Sort after priority
 for (let i = 0; i < components.length; i++) {
-	try {
-		priority =  parseInt(components[i].attributes['priority']);
-		components_sorted.push([priority, components[i]]);
-	} catch {
-		components_sorted.push([0, components[i]]);
-	}
-	if (components[i].classList[0] == "refresh") {
-        live_components(components[i]);
-    }
-}
-components_sorted = components_sorted.sort()
-
-
-// Load Components
-for (let i = 0; i < components_sorted.length; i++) {
-	load_content(components_sorted[i][1]);
-	if (components_sorted[i][1].classList[0] == "refresh") {
-        live_components(components_sorted[i]);
+    load_content(components[i]);
+    if (components[i].classList[0] == "refresh") {
+        live_components(components[i])
     }
 }
