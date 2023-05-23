@@ -1,6 +1,7 @@
 
 # Welcome to Jasna JS
-Jasna JS ist eine JavaScript Framework, welches deine HTML Dokumente übersichtlicher und deine Webseite schneller macht.
+Jasna JS is a JavaScript framework with which you can make your HTML documents more structured and clearer.
+The best thing about it: the minified JS version is only 469 bytes!
 
 ## Problem
 When building a website the HTML file can get heavily nested quite fast. I wanted to split up the website into multiple HTML files, so I could work on each component separately without the file getting too confusing to look at. Then I would simply put every component together in one clearly structured HTML file.
