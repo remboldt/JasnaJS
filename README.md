@@ -1,3 +1,4 @@
+
 # Welcome to Jasna JS
 Jasna JS ist eine JavaScript Framework, welches deine HTML Dokumente übersichtlicher und deine Webseite schneller macht.
 
@@ -13,9 +14,11 @@ Include the script at the bottom of your HTML document.
     <script src="https://cdn.remboldt.eu/jasna.min.js"></script>
 
 ### component
+This will pull the contents of `URL` and place them inside the `<component>` Tag.
+
     <component src="URL"></component>
 
 ### live component
-These components will check the source every MS milliseconds. If the content has changed, the component will be updated. If MS is not set, it will get a standard value of 2000.
+These components will check the source every `MS` milliseconds. If the content has changed, the component will be updated. If `MS` is not set, it will get a standard value of 2000.
 
     <component src="URL" class="refresh MS"></component>
